@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sendiee - WhatsApp and Email API platform</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="C:/Users/91822/Desktop/Sendiee-Frontend/Sendiee-Frontend/assets/css/document-style.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+
+    <script src="assets/js/toast.js"></script>
+    <script src="assets/js/modal.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="">
+            <div class="menu-list">
+                <div class="logo">
+                    <a href="#">
+                        <img src="C:/Users/91822/Desktop/Sendiee-Frontend/Sendiee-Frontend/assets/img/logo-black.png" alt="">
+                    </a>
+                </div>
+                <div class="nav-mob">
+                    <input type="checkbox" id="menu" />
+                    <label for="menu" class="menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <ul class="menu-items">
+                    <li class="menu-item">
+                        <a href="#features">Features</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#pricing">Pricing</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">API docs</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="action-buttons">
+                <a href="#" class="primary-button">Free demo</a>
+				<a href="#" class="primary-button">Login</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+	<div class="section-container" >
+		<div class="columns content" >
+			<div class="content-container">
+				<h5>SMS API DOCUMENTATION</h5><br>
+				<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt </p><br>
+				<h5> WHATSAPP REQUEST PARAMETER</h5><br>
+				<div class=	"parametertable">
+					<table class="paratable">
+						<tr class="first">
+							<th>Numbers *</th>
+								<td>Array</td>
+								<td>Array of recipient numbers.
+                                </td>
+						</tr>
+						<tr class="first">
+							<th>API *</th>
+							<td>String</td>
+								<td>API string generated from sendiee dashboard.
+                                </td>
+						</tr>
+						<tr class="first">
+							<th>Instance *</th>
+								<td>String</td>
+								<td>WhatsApp instance I'd generated from WhatsApp account page in sendiee dashboard.
+                                </td>
+						</tr>
+						<tr class="first">
+							<th>Message *</th>
+								<td>String</td>
+								<td>The message content. 
+                                </td>
+						</tr>
+						<tr class="first">
+							<th>Type </th>
+								<td>String</td>
+								<td>default=text .
+                                </td>
+						</tr>
+						<tr class="first">
+							<th> Media </th>
+								<td>String</td>
+								<td>The message content. This parameter should be no longer than.
+                                </td>
+						</tr>
+						<tr class="first">
+							<th> Interval</th>
+								<td>Number</td>
+								<td>default = 5.
+                                </td>
+						</tr>
+					
+					</table>
+					<p class="req"> *Required field</p>
+					
+				</div>
+				<h5>EMAIL REQUEST PARAMETER</h5><br>
+						<div class=	"parametertable">
+					<table class="paratable">
+						<tr class="first">
+							<th>To/bcc/cc *</th>
+								<td>String</td>
+								<td>Array of recipient numbers.
+                                </td>
+						</tr>
+						<tr class="first">
+							<th>API *</th>
+							<td>string</td>
+								<td>API string generated from sendiee dashboard.
+                                </td>
+						</tr>
+						<tr class="first">
+							<th>Content *</th>
+								<td>String</td>
+								<td>The message content to be sent.
+                                </td>
+						</tr>
+						<tr class="first">
+							<th>Sender *</th>
+								<td>String</td>
+								<td> 
+                                </td>
+						</tr>
+						<tr class="first">
+							<th>Subject</th>
+								<td>String</td>
+								<td>
+                                </td>
+						</tr>
+						<tr class="first">
+							<th>Template </th>
+								<td>String</td>
+								<td>
+                                </td>
+						</tr>
+						<tr class="first">
+							<th>Variable</th>
+								<td>Objects</td>
+								<td>
+                                </td>
+						</tr>
+					
+					</table>
+					<p class="req"> *Required field</p>
+				</div>
+				
+			</div>
+		</div>
+		<div class="columns right" >
+			
+			
+		</div>
+	</div>
+	
+   
+
+        <section class="container">
+            <div class="get-started">
+                <h3>Get free demo for 30 days & 20 messages</h3>
+                <a href="#" class="secondary-button white-color"><span>Get free demo</span></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container" style="position: relative;">
+            <div class="row g-0">
+                <div class="col-lg-7 left">
+                    <div class="logo">
+                        <img src="/assets/img/logo-white.png" alt="">
+                    </div>
+                    <div class="text">Sendiee is an user friendly WhatsApp and Email API platform for small scale businesses, developers, digital marketing and IOT projects</div>
+                    <button class="primary-button white-color">GET STARTED</button>
+                    <div class="legal">
+                        <ul>
+                            <li>
+                                <a href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-1 right">
+                    <div class="contact">
+                        <div class="label">Contact us</div>
+                        <a href="mailto:support@sendiee.com">support@sendiee.com</a>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="copyright">2022 © Copyright Codestormx </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
+</body>
+<script>
+    const packname=["Free","Basic","Professional","Enterprise","Enterprise plus"];
+    const packprice1m=["FREE","₹299","₹999","₹1,999","₹4,999"];
+    const packprice12m=["FREE","₹2,999","₹9,999","₹19,999","₹49,999"];
+    $(document).ready(function(){
+        $(".menu").click(function(){
+          $('nav').toggleClass("opened");
+        });
+      });
+      function togglePrice(button,month){
+        $('.pricing-toggle button').removeClass('active');
+          button.classList.add('active');
+          var lists = document.querySelectorAll('.pricing-list');
+        if(month===1){
+            $('.pricing-list .mode.change').text('/month');
+            for(i=0;i<lists.length;i++){
+                lists[i].lastElementChild.firstElementChild.textContent=packprice1m[i];
+            }
+        }else{
+            $('.pricing-list .mode.change').text('/year');
+            for(i=0;i<lists.length;i++){
+                lists[i].lastElementChild.firstElementChild.textContent=packprice12m[i];
+            }
+        }
+      }
+      let isAutoLoad=false;
+      function togglePackage(view,package){
+        $('.pricing-list').removeClass('active');
+        view.classList.add('active');
+        const lists = document.querySelectorAll('.plan-feature .list');
+        const packageid=["demo","basic","pro","enterprise","plus"];
+        for(i=0;i<lists.length;i++){
+            if(!lists[i].classList.contains(packageid[package])){
+                lists[i].classList.add('d-none');
+            }else{
+                lists[i].classList.remove('d-none');
+
+            }
+        }
+        if(window.innerWidth<=991){
+            if(isAutoLoad){
+                $('html, body').animate({
+                    scrollTop: $("#package_features").offset().top
+                }, 200);
+            }
+            isAutoLoad=true;
+        }
+      }
+      togglePrice(document.querySelector('.pricing-toggle button'),1);
+      togglePackage(document.querySelector('.pricing-lists .current'),2);
+</script>
+</html>
